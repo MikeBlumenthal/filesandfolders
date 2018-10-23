@@ -12,18 +12,17 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
 
     @Column(name = "name")
     private String name;
 
-    @JsonIgnore
     @OneToMany(mappedBy = "user")
     private List<Folder> folders;
 
     public User(String name){
         this.name = name;
-        this.folders = new ArrayList<>();
+        this.folders = new ArrayList<Folder>();
     }
 
     public User(){
