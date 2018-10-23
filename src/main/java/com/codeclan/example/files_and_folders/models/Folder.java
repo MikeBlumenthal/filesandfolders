@@ -1,6 +1,5 @@
 package com.codeclan.example.files_and_folders.models;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
 import java.util.ArrayList;
