@@ -9,6 +9,7 @@ import java.util.List;
 @Entity
 @Table(name = "folders")
 public class Folder {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
